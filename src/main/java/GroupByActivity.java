@@ -9,12 +9,16 @@ import java.util.Map;
 /**
  * SQL sublanguage: DQL (Data Query Language)
  *
- * NOTE: Before attempting this activity, you should have already completed the
+ * NOTE: Before attempting this activity, you should have already completed 
+ * the
  * Aggregate Functions activities.
  *
- * The GROUP BY clause allows you to group your results and can be used with the ORDER BY clause. Group By is
- * used in conjunction with aggregate functions. However, you cannot group by the output of the function.
- * Recall that the output of an aggregate function is a single aggregate value.
+ * The GROUP BY clause allows you to group your results and can be used 
+ * with the ORDER BY clause. Group By is
+ * used in conjunction with aggregate functions. However, you cannot group 
+ * by the output of the function.
+ * Recall that the output of an aggregate function is a single aggregate 
+ * value.
  *
  *
  *   employee table
@@ -26,8 +30,10 @@ import java.util.Map;
  *   |4     |'Brandon'       |'Jane'        |120000    |
  *   |5     |'Adam'          |'Dave'        |55050.50  |
  *
- * Example: You could query the above table with the AVG() aggregate function and GROUP BY manager to find the
- * average salary of employees under that manager (then order it from greatest average salary to least):
+ * Example: You could query the above table with the AVG() aggregate 
+ * function and GROUP BY manager to find the
+ * average salary of employees under that manager (then order it from 
+ * greatest average salary to least):
  *      SELECT manager, AVG(salary)
  *      FROM employees
  *      GROUP BY manager
@@ -52,11 +58,14 @@ public class GroupByActivity {
 
     public Map<String, Integer> problem1() {
         /**
-         * Problem 1: Use the GROUP BY clause with the COUNT() aggregate function to query the song table for the
-         * number of songs by each artist. Your SQL query should select both the artist column and the COUNT(song)
+         * Problem 1: Use the GROUP BY clause with the COUNT() aggregate 
+         * function to query the song table for the
+         * number of songs by each artist. Your SQL query should select 
+         * both the artist column and the COUNT(song)
          * columns, while also leveraging the group by clause.
          *
-         * HINT: You should avoid using the wild card (*) in your statement. All projected columns must either be used
+         * HINT: You should avoid using the wild card (*) in your statement.
+         *  All projected columns must either be used
          * in the GROUP BY clause or an aggregate function.
          */
         String sql = FileUtil.parseSQLFile("problem1.sql");
